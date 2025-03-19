@@ -59,10 +59,10 @@ namespace ClinAgenda.src.WebAPI.Controllers
                     return BadRequest("Os dados do status são inválidos.");
                 }
 
-                var createdDoctor = await _statusUseCase.CreateStatusAsync(status);
-                var infosDoctorCreated = await _statusUseCase.GetStatusByIdAsync(createdDoctor);
+                var createdStatus = await _statusUseCase.CreateStatusAsync(status);
+                var infosStatusCreated = await _statusUseCase.GetStatusByIdAsync(createdStatus);
 
-                return CreatedAtAction(nameof(GetStatusByIdAsync), new { id = createdDoctor }, infosDoctorCreated);
+                return CreatedAtAction(nameof(GetStatusByIdAsync), new { id = createdStatus }, infosStatusCreated);
             }
             catch (Exception ex)
             {
