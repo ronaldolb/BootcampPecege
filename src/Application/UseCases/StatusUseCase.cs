@@ -1,7 +1,7 @@
 using ClinAgenda.src.Application.DTOs.Status;
 using ClinAgenda.src.Core.Interfaces;
 
-namespace ClinAgendaAPI
+namespace ClinAgendaAPI.StatusUseCase
 {
     public class StatusUseCase
     {
