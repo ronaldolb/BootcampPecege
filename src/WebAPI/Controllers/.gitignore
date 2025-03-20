@@ -28,3 +28,4 @@ Temporary Items
 
 bin/
 appsettings.json
+appsettings.*.json
