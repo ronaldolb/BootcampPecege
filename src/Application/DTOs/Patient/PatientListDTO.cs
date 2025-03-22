@@ -12,7 +12,8 @@ namespace ClinAgenda.src.Application.DTOs.Patient
          public required string Name { get; set; }
         public required string PhoneNumber { get; set; }
         public required string DocumentNumber { get; set; }
-        public required StatusDTO Status { get; set; }
+        public int StatusId { get; set; }
+        public required string StatusName { get; set; }
         public required string BirthDate { get; set; }
     }
 }
